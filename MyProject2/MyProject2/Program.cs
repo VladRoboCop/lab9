@@ -14,7 +14,7 @@ namespace MyProject2
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>(); // Добавьте эту строку для ссылки на класс Startup
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }
