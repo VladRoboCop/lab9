@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "VTF8jOUueRfomKWWtu/GckBthJQ6vJMbBTTY7JBTGRM=",
+  "Source": "MyProject2",
+  "BasePath": "_content/MyProject2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MyProject2\\wwwroot",
+      "Source": "MyProject2",
+      "ContentRoot": "D:\\Microsoft Visual Studio\\source\\repos\\MyProject2\\MyProject2\\wwwroot\\",
+      "BasePath": "_content/MyProject2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

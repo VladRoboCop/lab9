@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Weather Forecast</h2>
+
+<form id="weatherForm" onsubmit="getWeather(event)">
+    <label for="city">Enter city:</label>
+    <input type="text" id="city" name="city" required />
+    <button type="submit">Get Weather</button>
+</form>
+
+<div id="weatherInfo" style="display: none;">
+    <h3 id="cityName"></h3>
+    <p id="temperature"></p>
+    <p id="humidity"></p>
+    <p id="pressure"></p>
+    <p id="windSpeed"></p>
+    <p id="cloudiness"></p>
+    <p id="description"></p>
+</div>
+
+<script>
+    function getWeather(event) {
+        event.preventDefault();
+        var city = document.getElementById("city").value;
+        var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=8f613725de57ffeac0140695d6572b05&units=metric&lang=en";
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("cityName").innerText = "Weather in " + data.name;
+                document.getElementById("temperature").innerText = "Temperature: " + data.main.temp + " °C";
+                document.getElementById("humidity").innerText = "Humidity: " + data.main.humidity + " %";
+                document.getElementById("pressure").innerText = "Pressure: " + data.main.pressure + " hPa";
+                document.getElementById("windSpeed").innerText = "Wind Speed: " + data.wind.speed + " m/s";
+                document.getElementById("cloudiness").innerText = "Cloudiness: " + data.clouds.all + " %";
+                document.getElementById("description").innerText = "Description: " + data.weather[0].description;
+
+                document.getElementById("weatherInfo").style.display = "block";
+            })
+            .catch(error => {
+                console.error("Error fetching weather data:", error);
+                alert("Error fetching weather data. Please try again later.");
+            });
+    }
+</script>

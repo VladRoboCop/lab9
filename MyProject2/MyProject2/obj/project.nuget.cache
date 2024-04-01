@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "fzV61nEVCf9mT4PYk3C3nS+QyBXY5I4/I7g3Ufd+2CMWD/ZGHdoKjh0UFljW5xus+83Fm3SrqsR0h+QyYwObAg==",
+  "success": true,
+  "projectFilePath": "D:\\Microsoft Visual Studio\\source\\repos\\MyProject2\\MyProject2\\MyProject2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vladr\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\vladr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\vladr\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\vladr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\vladr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
